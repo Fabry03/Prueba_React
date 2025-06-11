@@ -1,0 +1,55 @@
+# Backend Prueba Técnica
+
+Este proyecto es un backend desarrollado con Django y Django REST Framework.
+
+## Requisitos
+
+- Python 3.10 o superior
+- pip
+- (Opcional) [virtualenv](https://virtualenv.pypa.io/en/latest/)
+
+## Instalación
+
+1. **Crea y activa un entorno virtual (opcional pero recomendado)**  
+   ```sh
+   python -m venv venv
+   # En Windows:
+   venv\Scripts\activate
+   # En Mac/Linux:
+   source venv/bin/activate
+   ```
+
+2. **Instala las dependencias**  
+   ```sh
+   pip install -r requirements.txt
+   ```
+   Si no tienes un archivo `requirements.txt`, instala manualmente:
+   ```sh
+   pip install django djangorestframework django-cors-headers
+   ```
+
+3. **Aplica las migraciones**  
+   ```sh
+   python manage.py migrate
+   ```
+
+4. **Crea un superusuario (opcional, para acceder al admin)**  
+   ```sh
+   python manage.py createsuperuser
+   ```
+
+5. **Ejecuta el servidor de desarrollo**  
+   ```sh
+   python manage.py runserver
+   ```
+
+6. **Accede a la API y al panel de administración**  
+   - API: `http://localhost:8000/`
+   - Admin: `http://localhost:8000/admin/`
+
+## Notas
+
+- El backend utiliza SQLite por defecto.
+- Si usas frontend en React/Vue, asegúrate de que la URL esté permitida en `CORS_ALLOWED_ORIGINS` en [pruebatecnica/pruebatecnica/settings.py](pruebatecnica/pruebatecnica/settings.py).
+
+---

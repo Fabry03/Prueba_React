@@ -1,0 +1,12 @@
+react
+react-dom
+vite
+tailwindcss
+autoprefixer
+postcss
+chart.js
+react-chartjs-2
+axios
+Django
+djangorestframework
+django-cors-headers
