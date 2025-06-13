@@ -2,6 +2,8 @@ import { useState, useEffect } from "react"
 import { getComponentes, createComponente, updateComponente, deleteComponente } from "../../api/conmponentes"
 import MedicionesList from "./MedicionesList" // Ajusta la ruta si es necesario
 import ComponentesChart from "./ComponentesChart"
+import './MedicionList.css' // Asegúrate de tener este archivo CSS
+import "./CompList.css" // Asegúrate de tener este archivo CSS
 
 export default function CompList() {
     const [componentes, setComponentes] = useState([])
